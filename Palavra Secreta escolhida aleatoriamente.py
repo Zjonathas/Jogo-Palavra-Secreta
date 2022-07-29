@@ -24,14 +24,16 @@ while True:
 
     else:
         palavra_secreta = random.choice(marcas_de_celulares)
+    # Iniciando o jogo
     while True:
         if chances <= 0:
             print(f'Suas chances acabaram. A palavra secreta era {palavra_secreta}')
             break
-        letra_do_usuario = input('Digite uma letra: ')
-        if len(letra_do_usuario) > 1:
-            print('Erro digite apenas uma letra...')
-            continue
+        escolha = input('Dejesa digitar apenas uma letra ou a palavra inteira? [1] para letra [2] para a palavra')
+        if escolha == '1':
+
+        letra_do_usuario = input('Digite uma letra ou a palvra inteira (você perderá uma chance se errar): ')
+
         digitados.append(letra_do_usuario)
         if letra_do_usuario in palavra_secreta:
             print(f'AEEEE, você acertou uma letra >>> {letra_do_usuario}')
