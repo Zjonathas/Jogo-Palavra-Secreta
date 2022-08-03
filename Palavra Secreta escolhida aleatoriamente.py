@@ -15,11 +15,11 @@ while True:
 
     escolha = input('Escolha uma opção \n 1 - Comidas \n 2 - Países \n 3 - Marcas de celulares \n '
                     'Dgite o número correspondente a sua escolha: ')
-    comidas = ['banana', 'arroz', 'carne', 'frango', 'verdura']
+    comidas = ['banana', 'arroz', 'carne', 'frango', 'verdura', 'sopa', 'feijao', 'melancia', 'salcisha', ]
     paises = ['brasil', 'argentina', 'inglaterra', 'espanha']
     marcas_de_celulares = ['lg', 'xiaomi', 'motorola']
     digitados = []
-    chances = 3
+    chances = 4
 
     # Teste para verificar a escolha
     if escolha == '1':
